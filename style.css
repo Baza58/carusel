@@ -1,0 +1,76 @@
+body, html {
+	margin: 0px;
+	font-family: 'Open Sans', Arial;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 5;
+}
+
+.text {
+	position: absolute;
+	top: calc(50% - 20px);
+	left: 0px;
+	color: white;
+	z-index: 10;
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+}
+
+.switcher {
+	position: absolute;
+	bottom: 20px;
+	left: calc(50% - 85px);
+	z-index: 10;
+}
+
+.switch {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 3px solid white;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.switch:last-of-type {
+	margin-right: 0px;
+}
+.switch:hover {
+	background-color: white;
+}
+.loader {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.3);
+	display: none;
+}
+
+.active {
+	background-color: white;
+	cursor: default;
+}
+
+.loading-img {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top: calc(50% - 25px);
+	left: calc(50% - 25px);
+}
